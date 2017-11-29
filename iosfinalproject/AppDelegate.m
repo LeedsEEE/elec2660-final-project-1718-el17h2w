@@ -17,6 +17,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *TabBarItem1 = [tabBar.items objectAtIndex:0]; //First object to display in tab bar items
+    UITabBarItem *TabBarItem2 = [tabBar.items objectAtIndex:1]; //Second object to display in tab bar item
+    UITabBarItem *TabBarItem3 = [tabBar.items objectAtIndex:2]; //Third object to display in tab bar
+    UITabBarItem *TabBarItem4 = [tabBar.items objectAtIndex:3]; //Third object to display in tab bar
+    
+    TabBarItem1.title = @"Culture";
+    TabBarItem2.title = @"Map";
+    TabBarItem3.title = @"Change";
+    TabBarItem4.title = @"Note";
+    
+    
+    return YES;
+    
     return YES;
 }
 
