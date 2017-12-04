@@ -13,7 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *culturetitlelabel;
 @property (weak, nonatomic) IBOutlet UIImageView *cultureimagelabel;
-@property (weak, nonatomic) IBOutlet UILabel *descriptionlabel;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionlabel;
+
 
 
 

@@ -18,8 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    CGRect rect = CGRectMake(100, 200, 50, 50);
-    UILabel *descriptionlabel = [[UILabel alloc] initWithFrame:rect];
+    
     self.culturetitlelabel.text = self.module.culturetitle;
     self.cultureimagelabel.image = [UIImage imageNamed:self.module.cultureimage];
     self.descriptionlabel.text = self.module.culturedescription;

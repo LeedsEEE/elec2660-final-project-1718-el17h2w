@@ -31,7 +31,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.data=[[Culturedatamodule alloc]init];
     
-   
+    //image taken from https://www.vcg.com/creative/1005217877
     TitleImage = [NSArray arrayWithObjects:
                   @"UKintroduction.png",
                   @"Architureal.png",
@@ -41,10 +41,10 @@
                   @"weather.png",
                   @"tea.png",
                   @"food.png",
-                  @"foodtruck.png",
                   @"phonebooth.png",
+                  @"National costume.png",
                   @"premier.png",
-                  @"gentleman.png",
+                  @"Politics.png",
                   @"boat.png",
                   nil];
     
