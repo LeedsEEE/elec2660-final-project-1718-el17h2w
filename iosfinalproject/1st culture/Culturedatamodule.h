@@ -12,6 +12,6 @@
 
 @interface Culturedatamodule : NSObject
 
-@property (nonatomic, strong) NSMutableArray *leveloneModules;//NSMUtableArray here as it allows us to creat an array of indefinite length
+@property (nonatomic, strong) NSMutableArray *leveloneModules;// We use NSMutableArray here because it allows us to create an array of indefinite length. If we want to use a standard C array, we will have to specify how long it will take
 
 @end

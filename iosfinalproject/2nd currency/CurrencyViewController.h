@@ -10,19 +10,23 @@
 
 @interface CurrencyViewController : UIViewController <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *allfundsTextField;
-@property (weak, nonatomic) IBOutlet UITextField *fiftypoundsTextField;
-@property (weak, nonatomic) IBOutlet UITextField *twentypoundsTextField;
-@property (weak, nonatomic) IBOutlet UITextField *tenpoundsTextField;
-@property (weak, nonatomic) IBOutlet UITextField *fivepoundsTextField;
-@property (weak, nonatomic) IBOutlet UITextField *onepoundTextField;
-@property (weak, nonatomic) IBOutlet UITextField *fiftypennyTextField;
-@property (weak, nonatomic) IBOutlet UITextField *twentypennyTextField;
-@property (weak, nonatomic) IBOutlet UITextField *tenpennyTextField;
+//background of notecover @"2ndbackgroundimage.jpg" taken from https://www.pinterest.co.uk/explore/hipster-wallpaper/
 
 
-- (IBAction)currencycalculateButton:(id)sender;
-- (IBAction)currencyresetButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *allfundsTextField;//Defined the allfundsTextField
+@property (weak, nonatomic) IBOutlet UITextField *fiftypoundsTextField;//Defined the fiftypoundsTextField
+@property (weak, nonatomic) IBOutlet UITextField *twentypoundsTextField;//Defined the twentypoundsTextField
+@property (weak, nonatomic) IBOutlet UITextField *tenpoundsTextField;//Defined the tenpoundsTextField
+@property (weak, nonatomic) IBOutlet UITextField *fivepoundsTextField;//Defined the fivepoundsTextField
+@property (weak, nonatomic) IBOutlet UITextField *onepoundTextField;//Defined the onepoundTextField
+@property (weak, nonatomic) IBOutlet UITextField *fiftypennyTextField;//Defined the fiftypennyTextField
+@property (weak, nonatomic) IBOutlet UITextField *twentypennyTextField;//Defined the twentypennyTextField
+@property (weak, nonatomic) IBOutlet UITextField *tenpennyTextField;//Defined the tenpennyTextField
+
+
+- (IBAction)currencycalculateButton:(id)sender;//this button is used to calculate the cost/remining/extracost
+- (IBAction)currencyresetButton:(id)sender;//resart the calculate
 //- (IBAction)backgroundPressed:(id)sender;
 - (IBAction)backgroundPressed:(id)sender;
 
@@ -32,7 +36,7 @@
 
 
 
-
+// the number user input in textfield
 @property NSInteger fiftypoundsnumber;
 @property NSInteger twentypoundsnumber;
 @property NSInteger tenpoundsnumber;
@@ -42,18 +46,22 @@
 @property NSInteger twentypennynumber;
 @property NSInteger tenpennynumber;
 @property (nonatomic) double allfundsnumber;
+@property (nonatomic) double cost;
 
-@property (weak, nonatomic) IBOutlet UILabel *remaininglabel;
-@property (weak, nonatomic) IBOutlet UILabel *costlabel;
-@property (weak, nonatomic) IBOutlet UILabel *extracostlabel;
+//@property (nonatomic) double data;
 
 
-@property(nonatomic,retain) IBOutlet UIButton* resetbutton ;
+@property (weak, nonatomic) IBOutlet UILabel *remaininglabel;//this label show all remaining
+@property (weak, nonatomic) IBOutlet UILabel *costlabel;//this label show all cost
+@property (weak, nonatomic) IBOutlet UILabel *extracostlabel;//this label show extracost
 
-@property(nonatomic,retain) IBOutlet UIButton* calculatebutton ;
 
--(double) remaining;
--(double) cost;
+@property(nonatomic,retain) IBOutlet UIButton* resetbutton ;//Defined the resetbutton
+
+@property(nonatomic,retain) IBOutlet UIButton* calculatebutton ;//Defined the calculatebutton
+
+-(double) remaining;//calculate the remaning
+-(double) cost;//calculate the cost
 
 
 

@@ -10,6 +10,7 @@
 
 @interface notesixViewController : UIViewController
 
+//the common is same as noteoneViewContoller.h
 - (IBAction)button61:(id)sender;
 @property(nonatomic,retain) IBOutlet UIButton* button1 ;
 

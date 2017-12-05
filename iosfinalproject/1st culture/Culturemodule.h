@@ -13,9 +13,9 @@
 @interface Culturemodule : NSObject
 
 
-@property(nonatomic,strong) NSString *culturetitle;
-@property(nonatomic,strong) NSString *cultureimage;
-@property(nonatomic,strong) NSString *culturedescription;
+@property(nonatomic,strong) NSString *culturetitle;//Defined the title of culture in second viewcontroller
+@property(nonatomic,strong) NSString *cultureimage;//Defined the image of culture in second viewcontroller
+@property(nonatomic,strong) NSString *culturedescription;//Defined the image of culture in second viewcontroller
 
 
 @end

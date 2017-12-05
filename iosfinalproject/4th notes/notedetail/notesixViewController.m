@@ -14,6 +14,8 @@
 
 @implementation notesixViewController
 
+//the common is same as noteoneViewContoller.m
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -505,7 +507,7 @@
 - (IBAction)nextbutton62:(id)sender {
     long allchoice = [self allall];
     if (allchoice != 12){
-        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"" message: @"something not finished" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
+        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Something  forgotten" message: @"Press Skip to ignore it" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
         
         UIAlertAction *CanncelAction = [UIAlertAction
                                         actionWithTitle:@"Cancel"

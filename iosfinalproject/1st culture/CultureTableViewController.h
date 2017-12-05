@@ -13,8 +13,7 @@
 
 @interface CultureTableViewController : UITableViewController
 
+@property (strong, nonatomic) Culturedatamodule *data;//Create a data model object in the Table View Controller, read the data in the datamodule, this data points to the datamodule data
 
-
-@property (strong, nonatomic) Culturedatamodule *data;
 
 @end

@@ -13,7 +13,7 @@
 
 
 
-
+//Defined all of the buttons
 - (IBAction)button11:(id)sender;
 @property(nonatomic,retain) IBOutlet UIButton* button1 ;
 
@@ -34,7 +34,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *choice1label;
 
-
+//Defined all of the choice
 @property NSInteger choose1 ;
 @property NSInteger choose2 ;
 @property NSInteger choose3 ;
@@ -44,13 +44,13 @@
 
 @property NSInteger chooseall ;
 
--(long) allall;
+-(long) allall;//calculate all the number of choice
 
 
-@property(nonatomic,retain) IBOutlet UIButton* nextbutton11;
-@property(nonatomic,retain) IBOutlet UIButton* nextbutton12;
+@property(nonatomic,retain) IBOutlet UIButton* nextbutton11;//the button connect the next viewcontroller
+@property(nonatomic,retain) IBOutlet UIButton* nextbutton12;//ask the user whether to skip or not
 
-- (IBAction)nextbutton12:(id)sender;
+- (IBAction)nextbutton12:(id)sender;//judge skip/not skip
 
 
 @end

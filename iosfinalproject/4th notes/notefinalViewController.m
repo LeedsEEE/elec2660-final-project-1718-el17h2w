@@ -40,21 +40,21 @@
     [animatedImageNamed startAnimating];
     [self.view addSubview: animatedImageNamed];
      */
-    
+    //make the image look like a gif
     NSArray *imageNames = @[@"gif0.png",@"gif1.png",@"gif2.png",@"gif3.png",@"gif4.png",@"gif5.png",@"gif6.png",@"gif7.png",@"gif0.png",@"gif8.png",@"gif9.png",@"gif10.png",@"gif11.png",@"gif12.png",@"gif13.png",@"gif14.png"];
     
-    NSMutableArray *images = [[NSMutableArray alloc] init];     //creating an array and allocating space to store the images
+    NSMutableArray *images = [[NSMutableArray alloc] init];     //create an array and allocate space to store the image
     
     for (int i = 0; i < imageNames.count; i++) {
         [images addObject:[UIImage imageNamed:[imageNames objectAtIndex:i]]];
     }
     
     
-    self.animatedImageNamed.animationImages = images;            //Sets the images array to the animationImage
-    self.animatedImageNamed.animationDuration = 0.5;            // Setting the duration of one image to 1 second
+    self.image.animationImages = images;            //Sets the images array to the animationImage
+    self.image.animationDuration = 0.1;            // the image changed in 0.1second
     
-    [self.view addSubview:self.animatedImageNamed];
-    [self.animatedImageNamed startAnimating];
+    [self.view addSubview:self.image];
+    [self.image startAnimating];
     
     
     

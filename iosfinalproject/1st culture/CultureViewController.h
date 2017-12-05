@@ -11,17 +11,14 @@
 
 @interface CultureViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *culturetitlelabel;
-@property (weak, nonatomic) IBOutlet UIImageView *cultureimagelabel;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionlabel;
+//background of notecover @"1stbackgroundimage.jpg" taken from https://www.pinterest.co.uk/explore/hipster-wallpaper/
+
+@property (weak, nonatomic) IBOutlet UILabel *culturetitlelabel;//label of culturetitle
+@property (weak, nonatomic) IBOutlet UIImageView *cultureimagelabel;//label of culture image
+@property (weak, nonatomic) IBOutlet UITextView *descriptionlabel;//label of description
 
 
-
-
-
-
-
-@property (nonatomic, strong) Culturemodule *module;
+@property (nonatomic, strong) Culturemodule *module;//add a module property to the View Controller and assign the respective Module properties to the labels
 
 
 

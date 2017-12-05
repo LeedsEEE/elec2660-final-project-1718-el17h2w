@@ -39,7 +39,7 @@
 
 
 
-- (long) allall{
+- (long) allall{//calculate the number of choice
     
     long allall = self.choose1+self.choose2+self.choose3+self.choose4+self.choose5+self.choose6;
     
@@ -50,25 +50,26 @@
 
 
 - (IBAction)button11:(id)sender {
-    //use a button to replace switch and change the image learn form https://stackoverflow.com/questions/16281735/custom-uiswitch-with-image
-    _button1.selected = !_button1.selected;
-    [_button1 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];
-    [_button1 setImage:[UIImage imageNamed:@"switchoff.jpeg"] forState:UIControlStateNormal];
     
+    _button1.selected = !_button1.selected;//because the choice cannot change its image, so i used a button to replace it
+    [_button1 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];//he button not be choosed
+    [_button1 setImage:[UIImage imageNamed:@"switchoff.jpeg"] forState:UIControlStateNormal];//he button  be choosed
+    
+    //using i to judge the button is chooed or not
     long i =0;
     if (_button1.selected){
-        i = i+1;
+        i = i+1;// i is 0 or 1, so i can get the number of total choice
     }
     NSLog(@"I = %ld", i);
     
     _choose1 = i;
     
-    self.choice1label.text = [NSString stringWithFormat:@" %ld/6 hae been finished",self.allall];
+    self.choice1label.text = [NSString stringWithFormat:@" %ld/6 hae been finished",self.allall];//output the choice label
     
     long allchoice = [self allall];
     
-    if (allchoice == 6){
-        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Congratulation" message: @"finished" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
+    if (allchoice == 6){//if all of the button chosed, it will be an alert message
+        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Congratulation" message: @"Finished" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
         
         
         
@@ -77,9 +78,9 @@
                                      actionWithTitle:@"OK"
                                      style:UIAlertActionStyleDefault
                                      handler:^(UIAlertAction *action) {
-                                         _nextbutton12.hidden = true;
-                                         _nextbutton11.hidden=false;
-                                         //_nextbutton11.selected;
+                                         _nextbutton12.hidden = true;// because all chosed, button12 happened
+                                         _nextbutton11.hidden=false;// show button11
+                                         
                                      }];
         [allertController addAction:okayAction];
         
@@ -88,6 +89,7 @@
     }
 }
 
+//common same as button 11
 - (IBAction)button12:(id)sender {
     _button2.selected = !_button2.selected;
     [_button2 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];
@@ -129,7 +131,7 @@
 
 
 
-
+//common same as button 11
 - (IBAction)button13:(id)sender {
     _button3.selected = !_button3.selected;
     [_button3 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];
@@ -168,6 +170,7 @@
     }
 }
 
+//common same as button 11
 - (IBAction)button14:(id)sender {
     _button4.selected = !_button4.selected;
     [_button4 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];
@@ -205,6 +208,8 @@
     }
     
 }
+
+//common same as button 11
 - (IBAction)button16:(id)sender {
     _button6.selected = !_button6.selected;
     [_button6 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];
@@ -243,6 +248,8 @@
     }
     
 }
+
+//common same as button 11
 - (IBAction)button15:(id)sender {
     _button5.selected = !_button5.selected;
     [_button5 setImage:[UIImage imageNamed:@"switchon.jpeg"] forState:UIControlStateSelected];
@@ -280,10 +287,12 @@
     }
     
 }
+
+//common same as button 11
 - (IBAction)nextbutton12:(id)sender {
     long allchoice = [self allall];
     if (allchoice != 6){
-        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"" message: @"something not finished" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
+        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Something forgotten" message: @"Press Skip to ignore it" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
         
         UIAlertAction *CanncelAction = [UIAlertAction
                                         actionWithTitle:@"Cancel"

@@ -10,7 +10,7 @@
 
 @interface notethreeViewController : UIViewController
 
-
+//the common is same as noteoneViewContoller.h
 - (IBAction)button31:(id)sender;
 @property(nonatomic,retain) IBOutlet UIButton* button1 ;
 

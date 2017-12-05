@@ -14,14 +14,14 @@
 
 @implementation CultureViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad {// in the viewDidLoad so that the labels will update as soon as the view opens 在viewDidLoad
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     
-    self.culturetitlelabel.text = self.module.culturetitle;
-    self.cultureimagelabel.image = [UIImage imageNamed:self.module.cultureimage];
-    self.descriptionlabel.text = self.module.culturedescription;
+    self.culturetitlelabel.text = self.module.culturetitle;//output the culturetitlelabel
+    self.cultureimagelabel.image = [UIImage imageNamed:self.module.cultureimage];//output the cultureimagelabel
+    self.descriptionlabel.text = self.module.culturedescription;//output the descriptionlabel
     
 }
 

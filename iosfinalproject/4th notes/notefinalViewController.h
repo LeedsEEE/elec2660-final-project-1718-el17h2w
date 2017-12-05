@@ -10,6 +10,6 @@
 
 @interface notefinalViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *animatedImageNamed;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @end

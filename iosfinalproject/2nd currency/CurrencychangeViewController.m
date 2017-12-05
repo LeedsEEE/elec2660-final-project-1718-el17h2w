@@ -7,6 +7,8 @@
 //
 
 #import "CurrencychangeViewController.h"
+#import "CurrencyViewController.h"
+//#import "myDataClass.h"
 
 @interface CurrencychangeViewController ()
 
@@ -53,22 +55,22 @@ NSArray *currencychangearray;
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component {
     
-    return currencychangearray.count;
+    return currencychangearray.count;// return the array
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component {
 
-    return  currencychangearray[row];
+    return  currencychangearray[row];//return the row
 }
 
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
     
     
-    UILabel *band = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, pickerView.frame.size.width, 20)];
-    band.text = [currencychangearray objectAtIndex:row];
+    UILabel *band = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, pickerView.frame.size.width, 20)];//the size of the label in pickerview
+    band.text = [currencychangearray objectAtIndex:row];////we have our view, we can set its label using the arrays in  the currencychangearray object
     return band;
     
 }
@@ -79,70 +81,73 @@ numberOfRowsInComponent:(NSInteger)component {
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component {
     
-    self.unit = [self.currencypickerview selectedRowInComponent:0];
+    self.unit = [self.currencypickerview selectedRowInComponent:0];//The first column of the selector pickview // returns the choose to calculate.
     
-    double unitcost = [self.currency cost];
     
-    if (self.unit == 0) {
+   // myDataClass *data = [myDataClass sharedInstance];
+     double unitcost = [self.currency cost];
+    
+    
+    if (self.unit == 0) {// if user select the first line
         
-        self.poundsunitlabel.text = [NSString stringWithFormat:@"%.2f",unitcost];
+        self.poundsunitlabel.text = [NSString stringWithFormat:@"%.2f",unitcost];//the cost before changed.
         self.unittitlelabel.text = [NSString stringWithFormat:@"dollar"];
-        self.otherunitlabel.text = [NSString stringWithFormat:@""];
+        self.otherunitlabel.text = [NSString stringWithFormat:@""];//the cost after changed
         
-    } else if (self.unit == 1) {
-        
-        self.poundsunitlabel.text = [NSString stringWithFormat:@""];
-        self.unittitlelabel.text = [NSString stringWithFormat:@""];
-        self.otherunitlabel.text = [NSString stringWithFormat:@""];
-        
-    } else if (self.unit == 2) {
+    } else if (self.unit == 1) {// if user select the 2 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    } else if (self.unit == 3) {
+    } else if (self.unit == 2) {// if user select the 3 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    } else if (self.unit == 4) {
-        self.poundsunitlabel.text = [NSString stringWithFormat:@""];
-        self.unittitlelabel.text = [NSString stringWithFormat:@""];
-        self.otherunitlabel.text = [NSString stringWithFormat:@""];
-        
-    } else if (self.unit == 5) {
+    } else if (self.unit == 3) {// if user select the 4 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    } else if (self.unit == 6) {
+    } else if (self.unit == 4) {// if user select the 5 line
+        self.poundsunitlabel.text = [NSString stringWithFormat:@""];
+        self.unittitlelabel.text = [NSString stringWithFormat:@""];
+        self.otherunitlabel.text = [NSString stringWithFormat:@""];
+        
+    } else if (self.unit == 5) {// if user select the 6 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    } else if (self.unit == 7) {
+    } else if (self.unit == 6) {// if user select the 7 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    }else if (self.unit == 8) {
+    } else if (self.unit == 7) {// if user select the 8 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    }else if (self.unit == 9) {
+    }else if (self.unit == 8) {// if user select the 9 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];
         self.otherunitlabel.text = [NSString stringWithFormat:@""];
         
-    }else if (self.unit == 10) {
+    }else if (self.unit == 9) {// if user select the 10 line
+        
+        self.poundsunitlabel.text = [NSString stringWithFormat:@""];
+        self.unittitlelabel.text = [NSString stringWithFormat:@""];
+        self.otherunitlabel.text = [NSString stringWithFormat:@""];
+        
+    }else if (self.unit == 10) {// if user select the 11 line
         
         self.poundsunitlabel.text = [NSString stringWithFormat:@""];
         self.unittitlelabel.text = [NSString stringWithFormat:@""];

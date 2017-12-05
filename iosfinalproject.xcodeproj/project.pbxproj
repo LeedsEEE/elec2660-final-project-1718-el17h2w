@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA0CE3A91FC7AE080070780B /* CurrencychangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CE3A51FC7AE080070780B /* CurrencychangeViewController.m */; };
 		BA0CE3AA1FC7AE080070780B /* CurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0CE3A81FC7AE080070780B /* CurrencyViewController.m */; };
+		BA3164411FD5CDDF00F1242E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3164401FD5CDDF00F1242E /* MapViewController.m */; };
 		BA368A791FC9FB9500E6AF6A /* noteoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A781FC9FB9500E6AF6A /* noteoneViewController.m */; };
 		BA368A7C1FC9FBD500E6AF6A /* notetwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A7B1FC9FBD500E6AF6A /* notetwoViewController.m */; };
 		BA368A7F1FC9FBF600E6AF6A /* notethreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A7E1FC9FBF600E6AF6A /* notethreeViewController.m */; };
@@ -17,6 +18,9 @@
 		BA368A881FCA0D9000E6AF6A /* notesixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A871FCA0D9000E6AF6A /* notesixViewController.m */; };
 		BA368A8E1FCA0DDD00E6AF6A /* notecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A8D1FCA0DDD00E6AF6A /* notecoverViewController.m */; };
 		BA368A911FCA0DEB00E6AF6A /* notefinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A901FCA0DEB00E6AF6A /* notefinalViewController.m */; };
+		BA76ACBE1FD6253800C44967 /* noteonebackgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76ACBD1FD6253500C44967 /* noteonebackgroundimage.jpg */; };
+		BA76ACC01FD62C5800C44967 /* 1stbackgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76ACBF1FD62C5400C44967 /* 1stbackgroundimage.jpg */; };
+		BA76ACC21FD62F3200C44967 /* 2ndbackgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76ACC11FD62F2D00C44967 /* 2ndbackgroundimage.jpg */; };
 		BA91FA8D1FC5FA630016DB3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */; };
 		BA91FA931FC5FA630016DB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA91FA911FC5FA630016DB3F /* Main.storyboard */; };
 		BA91FA951FC5FA630016DB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA91FA941FC5FA630016DB3F /* Assets.xcassets */; };
@@ -46,6 +50,7 @@
 		BAAE588B1FD4BF3000A73133 /* National costumeimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAAE588A1FD4BF3000A73133 /* National costumeimage.jpg */; };
 		BABE0D6C1FCA34B900F319D0 /* switchoff.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BABE0D6B1FCA34B900F319D0 /* switchoff.jpeg */; };
 		BABE0D6E1FCA34BC00F319D0 /* switchon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BABE0D6D1FCA34BC00F319D0 /* switchon.jpeg */; };
+		BAD160041FD55A1A000BF951 /* myDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD160031FD55A1A000BF951 /* myDataClass.m */; };
 		BADE13651FC7AA8700AFFACB /* CultureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE13411FC7AA8600AFFACB /* CultureViewController.m */; };
 		BADE13661FC7AA8700AFFACB /* Culturedatamodule.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE13421FC7AA8600AFFACB /* Culturedatamodule.m */; };
 		BADE13671FC7AA8700AFFACB /* boat.png in Resources */ = {isa = PBXBuildFile; fileRef = BADE13441FC7AA8600AFFACB /* boat.png */; };
@@ -99,6 +104,13 @@
 		BA0CE3A61FC7AE080070780B /* CurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyViewController.h; sourceTree = "<group>"; };
 		BA0CE3A71FC7AE080070780B /* CurrencychangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencychangeViewController.h; sourceTree = "<group>"; };
 		BA0CE3A81FC7AE080070780B /* CurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyViewController.m; sourceTree = "<group>"; };
+		BA3164391FD5CA3100F1242E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BA31643A1FD5CA3900F1242E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		BA31643B1FD5CA4300F1242E /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		BA31643C1FD5CA4800F1242E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA31643D1FD5CA4E00F1242E /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		BA31643F1FD5CDDF00F1242E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BA3164401FD5CDDF00F1242E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BA368A771FC9FB9500E6AF6A /* noteoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = noteoneViewController.h; sourceTree = "<group>"; };
 		BA368A781FC9FB9500E6AF6A /* noteoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = noteoneViewController.m; sourceTree = "<group>"; };
 		BA368A7A1FC9FBD500E6AF6A /* notetwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = notetwoViewController.h; sourceTree = "<group>"; };
@@ -115,6 +127,9 @@
 		BA368A8D1FCA0DDD00E6AF6A /* notecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notecoverViewController.m; sourceTree = "<group>"; };
 		BA368A8F1FCA0DEB00E6AF6A /* notefinalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = notefinalViewController.h; sourceTree = "<group>"; };
 		BA368A901FCA0DEB00E6AF6A /* notefinalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notefinalViewController.m; sourceTree = "<group>"; };
+		BA76ACBD1FD6253500C44967 /* noteonebackgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noteonebackgroundimage.jpg; path = ../../../../noteonebackgroundimage.jpg; sourceTree = "<group>"; };
+		BA76ACBF1FD62C5400C44967 /* 1stbackgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1stbackgroundimage.jpg; path = ../../../1stbackgroundimage.jpg; sourceTree = "<group>"; };
+		BA76ACC11FD62F2D00C44967 /* 2ndbackgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2ndbackgroundimage.jpg; path = ../../../2ndbackgroundimage.jpg; sourceTree = "<group>"; };
 		BA91FA881FC5FA630016DB3F /* iosfinalproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosfinalproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA91FA8B1FC5FA630016DB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -151,6 +166,8 @@
 		BAAE588A1FD4BF3000A73133 /* National costumeimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "National costumeimage.jpg"; path = "../../../../2660 finial project/image/National costumeimage.jpg"; sourceTree = "<group>"; };
 		BABE0D6B1FCA34B900F319D0 /* switchoff.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = switchoff.jpeg; sourceTree = "<group>"; };
 		BABE0D6D1FCA34BC00F319D0 /* switchon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = switchon.jpeg; sourceTree = "<group>"; };
+		BAD160021FD55A1A000BF951 /* myDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myDataClass.h; sourceTree = "<group>"; };
+		BAD160031FD55A1A000BF951 /* myDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myDataClass.m; sourceTree = "<group>"; };
 		BADE13411FC7AA8600AFFACB /* CultureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CultureViewController.m; sourceTree = "<group>"; };
 		BADE13421FC7AA8600AFFACB /* Culturedatamodule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Culturedatamodule.m; sourceTree = "<group>"; };
 		BADE13441FC7AA8600AFFACB /* boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boat.png; sourceTree = "<group>"; };
@@ -184,6 +201,7 @@
 		BADE13631FC7AA8600AFFACB /* UKimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UKimage.jpg; sourceTree = "<group>"; };
 		BADE13641FC7AA8600AFFACB /* currencyimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = currencyimage.jpg; sourceTree = "<group>"; };
 		BADE13821FC7AB1E00AFFACB /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		BAEC50981FD6160C005B0E5B /* notebackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notebackground.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +232,7 @@
 		BA0CE3A41FC7AE080070780B /* 2nd currency */ = {
 			isa = PBXGroup;
 			children = (
+				BA76ACC11FD62F2D00C44967 /* 2ndbackgroundimage.jpg */,
 				BA0CE3A61FC7AE080070780B /* CurrencyViewController.h */,
 				BA0CE3A81FC7AE080070780B /* CurrencyViewController.m */,
 				BA0CE3A71FC7AE080070780B /* CurrencychangeViewController.h */,
@@ -222,9 +241,31 @@
 			path = "2nd currency";
 			sourceTree = "<group>";
 		};
+		BA3164371FD5C9A300F1242E /* 3td map */ = {
+			isa = PBXGroup;
+			children = (
+				BA31643F1FD5CDDF00F1242E /* MapViewController.h */,
+				BA3164401FD5CDDF00F1242E /* MapViewController.m */,
+			);
+			path = "3td map";
+			sourceTree = "<group>";
+		};
+		BA3164381FD5CA3100F1242E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA31643D1FD5CA4E00F1242E /* LocalAuthentication.framework */,
+				BA31643C1FD5CA4800F1242E /* MapKit.framework */,
+				BA31643B1FD5CA4300F1242E /* Contacts.framework */,
+				BA31643A1FD5CA3900F1242E /* AddressBook.framework */,
+				BA3164391FD5CA3100F1242E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA368A761FC9FB2000E6AF6A /* 4th notes */ = {
 			isa = PBXGroup;
 			children = (
+				BAEC50971FD61603005B0E5B /* backgroundimage */,
 				BABE0D621FCA328300F319D0 /* noteimage */,
 				BABE0D5E1FCA31BB00F319D0 /* notedetail */,
 				BA368A8C1FCA0DDD00E6AF6A /* notecoverViewController.h */,
@@ -243,6 +284,7 @@
 				BA91FAA31FC5FA640016DB3F /* iosfinalprojectTests */,
 				BA91FAAE1FC5FA640016DB3F /* iosfinalprojectUITests */,
 				BA91FA891FC5FA630016DB3F /* Products */,
+				BA3164381FD5CA3100F1242E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,14 +303,17 @@
 			children = (
 				BADE13401FC7AA8600AFFACB /* 1st culture */,
 				BA0CE3A41FC7AE080070780B /* 2nd currency */,
+				BA3164371FD5C9A300F1242E /* 3td map */,
 				BA368A761FC9FB2000E6AF6A /* 4th notes */,
+				BA91FA911FC5FA630016DB3F /* Main.storyboard */,
 				BA91FA8B1FC5FA630016DB3F /* AppDelegate.h */,
 				BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */,
-				BA91FA911FC5FA630016DB3F /* Main.storyboard */,
 				BA91FA941FC5FA630016DB3F /* Assets.xcassets */,
 				BA91FA961FC5FA630016DB3F /* LaunchScreen.storyboard */,
 				BA91FA991FC5FA630016DB3F /* Info.plist */,
 				BA91FA9A1FC5FA640016DB3F /* main.m */,
+				BAD160021FD55A1A000BF951 /* myDataClass.h */,
+				BAD160031FD55A1A000BF951 /* myDataClass.m */,
 			);
 			path = iosfinalproject;
 			sourceTree = "<group>";
@@ -344,6 +389,7 @@
 		BADE13401FC7AA8600AFFACB /* 1st culture */ = {
 			isa = PBXGroup;
 			children = (
+				BA76ACBF1FD62C5400C44967 /* 1stbackgroundimage.jpg */,
 				BADE13521FC7AA8600AFFACB /* CultureViewController.h */,
 				BADE13411FC7AA8600AFFACB /* CultureViewController.m */,
 				BADE13511FC7AA8600AFFACB /* CultureTableViewController.h */,
@@ -400,6 +446,15 @@
 				BADE13641FC7AA8600AFFACB /* currencyimage.jpg */,
 			);
 			path = "culture image";
+			sourceTree = "<group>";
+		};
+		BAEC50971FD61603005B0E5B /* backgroundimage */ = {
+			isa = PBXGroup;
+			children = (
+				BA76ACBD1FD6253500C44967 /* noteonebackgroundimage.jpg */,
+				BAEC50981FD6160C005B0E5B /* notebackground.jpg */,
+			);
+			path = backgroundimage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +571,7 @@
 				BAA3BBD11FCE5105004330ED /* gif11.png in Resources */,
 				BAA3BBBF1FCE50D8004330ED /* gif2.png in Resources */,
 				BADE13811FC7AA8700AFFACB /* currencyimage.jpg in Resources */,
+				BA76ACC01FD62C5800C44967 /* 1stbackgroundimage.jpg in Resources */,
 				BADE137B1FC7AA8700AFFACB /* gentleimage.jpg in Resources */,
 				BAA3BBCF1FCE50FE004330ED /* gif10.png in Resources */,
 				BADE136B1FC7AA8700AFFACB /* foodtruck.png in Resources */,
@@ -525,6 +581,7 @@
 				BAA3BBC11FCE50E0004330ED /* gif3.png in Resources */,
 				BAAE58891FD4BF0C00A73133 /* National costume.png in Resources */,
 				BAA3BBC51FCE50E9004330ED /* gif5.png in Resources */,
+				BA76ACC21FD62F3200C44967 /* 2ndbackgroundimage.jpg in Resources */,
 				BADE137D1FC7AA8700AFFACB /* foodimage.jpg in Resources */,
 				BABE0D6E1FCA34BC00F319D0 /* switchon.jpeg in Resources */,
 				BAAE58871FD4BC4C00A73133 /* Politics.png in Resources */,
@@ -544,6 +601,7 @@
 				BA91FA951FC5FA630016DB3F /* Assets.xcassets in Resources */,
 				BAAE58831FD4BC1200A73133 /* footimage.jpg in Resources */,
 				BADE13701FC7AA8700AFFACB /* currency.png in Resources */,
+				BA76ACBE1FD6253800C44967 /* noteonebackgroundimage.jpg in Resources */,
 				BADE13771FC7AA8700AFFACB /* phoneboothimage.jpg in Resources */,
 				BADE13781FC7AA8700AFFACB /* foodtruckimage.jpg in Resources */,
 				BAAE58851FD4BC2000A73133 /* Politicsimage.jpg in Resources */,
@@ -585,6 +643,7 @@
 				BA368A821FC9FC1D00E6AF6A /* notefourViewController.m in Sources */,
 				BA368A791FC9FB9500E6AF6A /* noteoneViewController.m in Sources */,
 				BADE13651FC7AA8700AFFACB /* CultureViewController.m in Sources */,
+				BA3164411FD5CDDF00F1242E /* MapViewController.m in Sources */,
 				BA91FA9B1FC5FA640016DB3F /* main.m in Sources */,
 				BA368A851FCA0D8200E6AF6A /* notefiveViewController.m in Sources */,
 				BA368A7F1FC9FBF600E6AF6A /* notethreeViewController.m in Sources */,
@@ -597,6 +656,7 @@
 				BA368A911FCA0DEB00E6AF6A /* notefinalViewController.m in Sources */,
 				BA91FA8D1FC5FA630016DB3F /* AppDelegate.m in Sources */,
 				BA0CE3A91FC7AE080070780B /* CurrencychangeViewController.m in Sources */,
+				BAD160041FD55A1A000BF951 /* myDataClass.m in Sources */,
 				BA368A881FCA0D9000E6AF6A /* notesixViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

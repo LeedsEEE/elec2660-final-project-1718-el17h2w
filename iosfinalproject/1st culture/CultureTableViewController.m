@@ -29,7 +29,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.data=[[Culturedatamodule alloc]init];
+    self.data=[[Culturedatamodule alloc]init];//Create the object as an attribute and initialize it in the viewDidLoad method
     
     //image taken from https://www.vcg.com/creative/1005217877
     TitleImage = [NSArray arrayWithObjects:
@@ -46,7 +46,7 @@
                   @"premier.png",
                   @"Politics.png",
                   @"boat.png",
-                  nil];
+                  nil];//the image of yiylr image
     
     
 }
@@ -60,7 +60,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 1;
+    return 1;//the first decides on the number of sections in the table
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -68,10 +68,10 @@
     NSInteger numberOfRows = 0;
     if (section == 0){
         
-        numberOfRows = self.data.leveloneModules.count;
+        numberOfRows = self.data.leveloneModules.count;//Output the number of elements in the collection, so here numberofrows = number of elements, the elements have the same namber of  lines
     }
     
-    return numberOfRows;
+    return numberOfRows;//In the first part, there are several elements, output the same  number of  lines, for example, there are 13 subjects now output 13 lines
 }
 
 
@@ -86,12 +86,12 @@
     
     if (indexPath.section ==0){ //refers to what's displayed first
         
-        Culturemodule *culturemodule = [self.data.leveloneModules objectAtIndex:indexPath.row];
-        //cell.textLabel.font =[UIFont boldSystemFontOfSize:20]; // sets the table text labels to bold with font size 20
-        cell.textLabel.textColor = [UIColor redColor]; //sets the font colour to dark gray
+        Culturemodule *culturemodule = [self.data.leveloneModules objectAtIndex:indexPath.row];//creat a temporary Module object in which to hold the information from our Data Module while we apply it to the cell
         
-        cell.textLabel.text = culturemodule.culturetitle;//Assigning data to the prototype cell text.
-        cell.imageView.image = [UIImage imageNamed:[TitleImage objectAtIndex:indexPath.row]];// Adds a table icon image
+        cell.textLabel.textColor = [UIColor redColor]; //Setting the font colour to red
+        
+        cell.textLabel.text = culturemodule.culturetitle;//Assign data to the prototype cell text.
+        cell.imageView.image = [UIImage imageNamed:[TitleImage objectAtIndex:indexPath.row]];// Add a form logo image
     
     }
     // Configure the cell...
@@ -142,12 +142,12 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-     if ([[segue identifier] isEqualToString:@"ShowModuleDetails"]) {
+     if ([[segue identifier] isEqualToString:@"ShowModuleDetails"]) {// by using the isEqualToString condition on this if statement, we can check the segue's identifier
     CultureViewController *destinationViewController = [segue destinationViewController];
-    NSIndexPath *indexpath = [self.tableView indexPathForSelectedRow];
-    if (indexpath.section == 0) {
+    NSIndexPath *indexpath = [self.tableView indexPathForSelectedRow];// by looking at the section number of the index path, we can tell which level the module is in
+    if (indexpath.section == 0) {//level one module
         
-        Culturemodule *tempModule = [self.data.leveloneModules objectAtIndex:indexpath.row];
+        Culturemodule *tempModule = [self.data.leveloneModules objectAtIndex:indexpath.row];//finally, we can set this temporary Module object as the Module Object in the destination View controller.
         
          destinationViewController.module = tempModule;
         

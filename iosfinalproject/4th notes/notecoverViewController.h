@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface notecoverViewController : UIViewController
+//background of notecover @"notebackground.jpg" taken from https://www.pinterest.co.uk/explore/hipster-wallpaper/
+
+//background of notecover @"noteonebackgroundimage.jpg" taken from https://www.pinterest.co.uk/explore/hipster-wallpaper/
 
 @end

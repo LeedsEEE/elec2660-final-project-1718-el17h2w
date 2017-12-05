@@ -14,6 +14,8 @@
 
 @implementation notefourViewController
 
+//the common is same as noteoneViewContoller.m
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -458,7 +460,7 @@
     
     long allchoice = [self allall];
     if (allchoice != 11){
-        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"" message: @"something not finished" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
+        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Something you may have forgotten" message: @"Press Skip to ignore it" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
         
         UIAlertAction *CanncelAction = [UIAlertAction
                                         actionWithTitle:@"Cancel"

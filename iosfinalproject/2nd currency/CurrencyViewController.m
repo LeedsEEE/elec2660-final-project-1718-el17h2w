@@ -7,6 +7,7 @@
 //
 
 #import "CurrencyViewController.h"
+//#import "myDataClass.h"
 
 @interface CurrencyViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    //hidden all the label/button i don't want user see, before they input the data
     self.extracostlabel.hidden = true;
     self.costlabel.hidden=true;
     self.remaininglabel.hidden = true;
@@ -42,17 +43,21 @@
 }
 */
 
--(double) remaining{
+-(double) remaining{// calculate the remaining
     double totalremaining = (self.allfundsnumber)-((self.fiftypoundsnumber)*50+(self.twentypoundsnumber)*20+(self.tenpoundsnumber)*10+(self.fivepoundsnumber)*5+(self.onepoundnumber)+(self.fiftypennynumber)*0.5+(self.twentypennynumber)*0.2+(self.tenpennynumber)*0.1);
     
     return totalremaining;
     
 }
 
--(double) cost{
+-(double) cost{// calculate the cost
     double totalcost = (self.fiftypoundsnumber)*50+(self.twentypoundsnumber)*20+(self.tenpoundsnumber)*10+(self.fivepoundsnumber)*5+(self.onepoundnumber)+(self.fiftypennynumber)*0.5+(self.twentypennynumber)*0.2+(self.tenpennynumber)*0.1;
     
     return totalcost;
+    
+    // self.data = totalcost;
+   // myDataClass *data = [myDataClass sharedInstance];
+    
     
 }
 
@@ -62,6 +67,7 @@
 
 - (IBAction)currencycalculateButton:(id)sender {
     
+    //Defined the number = user input
     self.allfundsnumber = [self.allfundsTextField.text doubleValue];
     
     self.fiftypoundsnumber = [self.fiftypoundsTextField.text integerValue];
@@ -74,20 +80,21 @@
     self.twentypennynumber = [self.twentypennyTextField.text integerValue];
     self.tenpennynumber = [self.tenpennyTextField.text integerValue];
     
-    double allremaining = [self remaining];
-    double allcost = [self cost];
-    double allextracost = [self cost] - (self.allfundsnumber);
+    
+    double allremaining = [self remaining];//allremaining is the remaining calculated before
+    double allcost = [self cost];//allcost is the cost calculated before
+    double allextracost = [self cost] - (self.allfundsnumber);//calculte the allextracost
     
     
-    self.remaininglabel.text = [NSString stringWithFormat:@"Remaining = £%0.2f ", allremaining];
-    self.costlabel.text = [NSString stringWithFormat:@"cost = £ %.2f  ", allcost];
+    self.remaininglabel.text = [NSString stringWithFormat:@"Remaining = £%0.2f ", allremaining];//output the remaininglabel
+    self.costlabel.text = [NSString stringWithFormat:@"cost = £ %.2f  ", allcost];//output the costlabel
     
     
     
     
     
     if (allremaining < 0){
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"WOW" message: @"You spend more than your budget！ " preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"WOW" message: @"You spend more than your budget！ " preferredStyle:UIAlertControllerStyleAlert]; //it allremaning is higher than all fonds, this AlertController will happen
         
        /*
         UIAlertAction *CancelAction = [UIAlertAction
@@ -103,14 +110,17 @@
                                      style:UIAlertActionStyleDefault
                                      handler:^(UIAlertAction *action) {
                                          NSLog(@"Okay");
-                                     }];//sets the style of the action the user needs to take
+                                     }];//sets the action the user needs to take
         [alertController addAction:okayAction];
         //[alertController addAction:CancelAction];
         [self presentViewController:alertController animated:YES completion:nil];
         
+        //output the label
         self.remaininglabel.text = [NSString stringWithFormat:@"Remaining = £%0.2f ", allremaining];
         self.costlabel.text = [NSString stringWithFormat:@"cost = £ %.2f  ", allcost];
         self.extracostlabel.text =[NSString stringWithFormat:@"extracost = £ %.2f  ", allextracost];
+        
+        //show the label hidden before
         self.extracostlabel.hidden = false;
         self.costlabel.hidden=false;
         self.remaininglabel.hidden = false;
@@ -120,9 +130,10 @@
     }
     
     if (allremaining > 0){
-        
+        //output the label
         self.remaininglabel.text = [NSString stringWithFormat:@"Remaining = £%0.2f ", allremaining];
         self.costlabel.text = [NSString stringWithFormat:@"cost = £ %.2f  ", allcost];
+        //show the label hidden before, because there is no extracost, the extracostlabel hidden.
         self.extracostlabel.hidden = true;
         self.costlabel.hidden=false;
         self.remaininglabel.hidden = false;
@@ -134,7 +145,7 @@
     
 }
 
-- (IBAction)currencyresetButton:(id)sender {
+- (IBAction)currencyresetButton:(id)sender {//this step reset all of data, every data = 0;
     self.allfundsTextField.text = nil;
     self.fiftypoundsTextField.text = nil;
     self.twentypoundsTextField.text = nil;
@@ -198,7 +209,7 @@
 - (IBAction)backgroundPressed:(id)sender {
     
     if ([self.allfundsTextField isFirstResponder]) {
-        [self.allfundsTextField resignFirstResponder];
+        [self.allfundsTextField resignFirstResponder];//add some code to dismiss either Text field as the first responder
     }
     if ([self.fiftypoundsTextField isFirstResponder]) {
         [self.fiftypoundsTextField resignFirstResponder];
