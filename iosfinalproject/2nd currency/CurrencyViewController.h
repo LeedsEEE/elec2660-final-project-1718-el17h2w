@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CurrencychangeViewController.h"
 
 @interface CurrencyViewController : UIViewController <UITextFieldDelegate>
 
@@ -46,9 +47,10 @@
 @property NSInteger twentypennynumber;
 @property NSInteger tenpennynumber;
 @property (nonatomic) double allfundsnumber;
-@property (nonatomic) double cost;
 
-//@property (nonatomic) double data;
+@property (nonatomic) double allallcost;//the passing data to next view controller
+
+
 
 
 @property (weak, nonatomic) IBOutlet UILabel *remaininglabel;//this label show all remaining

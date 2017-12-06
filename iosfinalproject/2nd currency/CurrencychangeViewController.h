@@ -25,7 +25,8 @@
 
 @property NSInteger unit;//Defined the unit
 
-@property CurrencyViewController*currency;// Create a currency object//unit is a currency class definition, we assume a currency as a currency class, so we can enter in the currency inside
 
+//the value passing from currency view controller
+@property (nonatomic, assign) double isSomethingEnabled;
 
 @end

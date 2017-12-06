@@ -91,7 +91,7 @@
         cell.textLabel.textColor = [UIColor redColor]; //Setting the font colour to red
         
         cell.textLabel.text = culturemodule.culturetitle;//Assign data to the prototype cell text.
-        cell.imageView.image = [UIImage imageNamed:[TitleImage objectAtIndex:indexPath.row]];// Add a form logo image
+        cell.imageView.image = [UIImage imageNamed:[TitleImage objectAtIndex:indexPath.row]];// Add logo image
     
     }
     // Configure the cell...
@@ -137,6 +137,7 @@
 
 #pragma mark - Navigation
 
+//these code learn from lab3 in class
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].

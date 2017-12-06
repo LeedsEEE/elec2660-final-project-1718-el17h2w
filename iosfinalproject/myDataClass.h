@@ -10,7 +10,7 @@
 
 @interface myDataClass : NSObject
 
-@property (nonatomic,copy) NSNumber *unitCost;
+@property double unitCost;
 
 + (myDataClass *) sharedInstance;
 

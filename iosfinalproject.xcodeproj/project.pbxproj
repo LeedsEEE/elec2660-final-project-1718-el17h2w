@@ -18,9 +18,6 @@
 		BA368A881FCA0D9000E6AF6A /* notesixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A871FCA0D9000E6AF6A /* notesixViewController.m */; };
 		BA368A8E1FCA0DDD00E6AF6A /* notecoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A8D1FCA0DDD00E6AF6A /* notecoverViewController.m */; };
 		BA368A911FCA0DEB00E6AF6A /* notefinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA368A901FCA0DEB00E6AF6A /* notefinalViewController.m */; };
-		BA76ACBE1FD6253800C44967 /* noteonebackgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76ACBD1FD6253500C44967 /* noteonebackgroundimage.jpg */; };
-		BA76ACC01FD62C5800C44967 /* 1stbackgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76ACBF1FD62C5400C44967 /* 1stbackgroundimage.jpg */; };
-		BA76ACC21FD62F3200C44967 /* 2ndbackgroundimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA76ACC11FD62F2D00C44967 /* 2ndbackgroundimage.jpg */; };
 		BA91FA8D1FC5FA630016DB3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */; };
 		BA91FA931FC5FA630016DB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA91FA911FC5FA630016DB3F /* Main.storyboard */; };
 		BA91FA951FC5FA630016DB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA91FA941FC5FA630016DB3F /* Assets.xcassets */; };
@@ -28,6 +25,10 @@
 		BA91FA9B1FC5FA640016DB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FA9A1FC5FA640016DB3F /* main.m */; };
 		BA91FAA51FC5FA640016DB3F /* iosfinalprojectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FAA41FC5FA640016DB3F /* iosfinalprojectTests.m */; };
 		BA91FAB01FC5FA640016DB3F /* iosfinalprojectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FAAF1FC5FA640016DB3F /* iosfinalprojectUITests.m */; };
+		BA9F75CA1FD86BFF002BF098 /* tabbar1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75C91FD86BFF002BF098 /* tabbar1.jpeg */; };
+		BA9F75CC1FD86C32002BF098 /* tabbar3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75CB1FD86C32002BF098 /* tabbar3.jpeg */; };
+		BA9F75CE1FD86C35002BF098 /* tabbar2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75CD1FD86C35002BF098 /* tabbar2.jpeg */; };
+		BA9F75D01FD86C3C002BF098 /* tabbar4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75CF1FD86C3C002BF098 /* tabbar4.jpeg */; };
 		BAA3BBBB1FCE50CB004330ED /* gif1.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3BBBA1FCE50CB004330ED /* gif1.png */; };
 		BAA3BBBD1FCE50D1004330ED /* gif0.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3BBBC1FCE50D1004330ED /* gif0.png */; };
 		BAA3BBBF1FCE50D8004330ED /* gif2.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3BBBE1FCE50D8004330ED /* gif2.png */; };
@@ -127,9 +128,6 @@
 		BA368A8D1FCA0DDD00E6AF6A /* notecoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notecoverViewController.m; sourceTree = "<group>"; };
 		BA368A8F1FCA0DEB00E6AF6A /* notefinalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = notefinalViewController.h; sourceTree = "<group>"; };
 		BA368A901FCA0DEB00E6AF6A /* notefinalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notefinalViewController.m; sourceTree = "<group>"; };
-		BA76ACBD1FD6253500C44967 /* noteonebackgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noteonebackgroundimage.jpg; path = ../../../../noteonebackgroundimage.jpg; sourceTree = "<group>"; };
-		BA76ACBF1FD62C5400C44967 /* 1stbackgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1stbackgroundimage.jpg; path = ../../../1stbackgroundimage.jpg; sourceTree = "<group>"; };
-		BA76ACC11FD62F2D00C44967 /* 2ndbackgroundimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2ndbackgroundimage.jpg; path = ../../../2ndbackgroundimage.jpg; sourceTree = "<group>"; };
 		BA91FA881FC5FA630016DB3F /* iosfinalproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosfinalproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA91FA8B1FC5FA630016DB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,6 +142,10 @@
 		BA91FAAB1FC5FA640016DB3F /* iosfinalprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosfinalprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA91FAAF1FC5FA640016DB3F /* iosfinalprojectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosfinalprojectUITests.m; sourceTree = "<group>"; };
 		BA91FAB11FC5FA640016DB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9F75C91FD86BFF002BF098 /* tabbar1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar1.jpeg; path = ../../../tabbar1.jpeg; sourceTree = "<group>"; };
+		BA9F75CB1FD86C32002BF098 /* tabbar3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar3.jpeg; path = ../../../tabbar3.jpeg; sourceTree = "<group>"; };
+		BA9F75CD1FD86C35002BF098 /* tabbar2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar2.jpeg; path = ../../../tabbar2.jpeg; sourceTree = "<group>"; };
+		BA9F75CF1FD86C3C002BF098 /* tabbar4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar4.jpeg; path = ../../../tabbar4.jpeg; sourceTree = "<group>"; };
 		BAA3BBBA1FCE50CB004330ED /* gif1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif1.png; sourceTree = "<group>"; };
 		BAA3BBBC1FCE50D1004330ED /* gif0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif0.png; sourceTree = "<group>"; };
 		BAA3BBBE1FCE50D8004330ED /* gif2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif2.png; sourceTree = "<group>"; };
@@ -232,7 +234,6 @@
 		BA0CE3A41FC7AE080070780B /* 2nd currency */ = {
 			isa = PBXGroup;
 			children = (
-				BA76ACC11FD62F2D00C44967 /* 2ndbackgroundimage.jpg */,
 				BA0CE3A61FC7AE080070780B /* CurrencyViewController.h */,
 				BA0CE3A81FC7AE080070780B /* CurrencyViewController.m */,
 				BA0CE3A71FC7AE080070780B /* CurrencychangeViewController.h */,
@@ -277,6 +278,17 @@
 			path = "4th notes";
 			sourceTree = "<group>";
 		};
+		BA471E691FD77A340093B6BC /* tabbarimage */ = {
+			isa = PBXGroup;
+			children = (
+				BA9F75C91FD86BFF002BF098 /* tabbar1.jpeg */,
+				BA9F75CB1FD86C32002BF098 /* tabbar3.jpeg */,
+				BA9F75CD1FD86C35002BF098 /* tabbar2.jpeg */,
+				BA9F75CF1FD86C3C002BF098 /* tabbar4.jpeg */,
+			);
+			path = tabbarimage;
+			sourceTree = "<group>";
+		};
 		BA91FA7F1FC5FA630016DB3F = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +317,7 @@
 				BA0CE3A41FC7AE080070780B /* 2nd currency */,
 				BA3164371FD5C9A300F1242E /* 3td map */,
 				BA368A761FC9FB2000E6AF6A /* 4th notes */,
+				BA471E691FD77A340093B6BC /* tabbarimage */,
 				BA91FA911FC5FA630016DB3F /* Main.storyboard */,
 				BA91FA8B1FC5FA630016DB3F /* AppDelegate.h */,
 				BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */,
@@ -389,7 +402,6 @@
 		BADE13401FC7AA8600AFFACB /* 1st culture */ = {
 			isa = PBXGroup;
 			children = (
-				BA76ACBF1FD62C5400C44967 /* 1stbackgroundimage.jpg */,
 				BADE13521FC7AA8600AFFACB /* CultureViewController.h */,
 				BADE13411FC7AA8600AFFACB /* CultureViewController.m */,
 				BADE13511FC7AA8600AFFACB /* CultureTableViewController.h */,
@@ -451,7 +463,6 @@
 		BAEC50971FD61603005B0E5B /* backgroundimage */ = {
 			isa = PBXGroup;
 			children = (
-				BA76ACBD1FD6253500C44967 /* noteonebackgroundimage.jpg */,
 				BAEC50981FD6160C005B0E5B /* notebackground.jpg */,
 			);
 			path = backgroundimage;
@@ -571,23 +582,23 @@
 				BAA3BBD11FCE5105004330ED /* gif11.png in Resources */,
 				BAA3BBBF1FCE50D8004330ED /* gif2.png in Resources */,
 				BADE13811FC7AA8700AFFACB /* currencyimage.jpg in Resources */,
-				BA76ACC01FD62C5800C44967 /* 1stbackgroundimage.jpg in Resources */,
 				BADE137B1FC7AA8700AFFACB /* gentleimage.jpg in Resources */,
 				BAA3BBCF1FCE50FE004330ED /* gif10.png in Resources */,
 				BADE136B1FC7AA8700AFFACB /* foodtruck.png in Resources */,
 				BADE13721FC7AA8700AFFACB /* tea.png in Resources */,
 				BADE13711FC7AA8700AFFACB /* UKintroduction.png in Resources */,
 				BADE13831FC7AB1E00AFFACB /* food.png in Resources */,
+				BA9F75D01FD86C3C002BF098 /* tabbar4.jpeg in Resources */,
 				BAA3BBC11FCE50E0004330ED /* gif3.png in Resources */,
 				BAAE58891FD4BF0C00A73133 /* National costume.png in Resources */,
 				BAA3BBC51FCE50E9004330ED /* gif5.png in Resources */,
-				BA76ACC21FD62F3200C44967 /* 2ndbackgroundimage.jpg in Resources */,
 				BADE137D1FC7AA8700AFFACB /* foodimage.jpg in Resources */,
 				BABE0D6E1FCA34BC00F319D0 /* switchon.jpeg in Resources */,
 				BAAE58871FD4BC4C00A73133 /* Politics.png in Resources */,
 				BADE13671FC7AA8700AFFACB /* boat.png in Resources */,
 				BADE137C1FC7AA8700AFFACB /* teaimage.jpg in Resources */,
 				BAA3BBCD1FCE50FC004330ED /* gif9.png in Resources */,
+				BA9F75CA1FD86BFF002BF098 /* tabbar1.jpeg in Resources */,
 				BADE136C1FC7AA8700AFFACB /* premier.png in Resources */,
 				BAA3BBD71FCE5111004330ED /* gif14.png in Resources */,
 				BAAE588B1FD4BF3000A73133 /* National costumeimage.jpg in Resources */,
@@ -601,10 +612,11 @@
 				BA91FA951FC5FA630016DB3F /* Assets.xcassets in Resources */,
 				BAAE58831FD4BC1200A73133 /* footimage.jpg in Resources */,
 				BADE13701FC7AA8700AFFACB /* currency.png in Resources */,
-				BA76ACBE1FD6253800C44967 /* noteonebackgroundimage.jpg in Resources */,
 				BADE13771FC7AA8700AFFACB /* phoneboothimage.jpg in Resources */,
 				BADE13781FC7AA8700AFFACB /* foodtruckimage.jpg in Resources */,
+				BA9F75CC1FD86C32002BF098 /* tabbar3.jpeg in Resources */,
 				BAAE58851FD4BC2000A73133 /* Politicsimage.jpg in Resources */,
+				BA9F75CE1FD86C35002BF098 /* tabbar2.jpeg in Resources */,
 				BADE13681FC7AA8700AFFACB /* gentleman.png in Resources */,
 				BADE13761FC7AA8700AFFACB /* boatimage.jpg in Resources */,
 				BAA3BBC31FCE50E6004330ED /* gif4.png in Resources */,

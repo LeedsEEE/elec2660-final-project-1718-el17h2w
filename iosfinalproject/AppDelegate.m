@@ -18,17 +18,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //sort odrer of tarbaritem
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     UITabBar *tabBar = tabBarController.tabBar;
-    UITabBarItem *TabBarItem1 = [tabBar.items objectAtIndex:0]; //First object to display in tab bar items
-    UITabBarItem *TabBarItem2 = [tabBar.items objectAtIndex:1]; //Second object to display in tab bar item
-    UITabBarItem *TabBarItem3 = [tabBar.items objectAtIndex:2]; //Third object to display in tab bar
-    UITabBarItem *TabBarItem4 = [tabBar.items objectAtIndex:3]; //Third object to display in tab bar
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0]; //First object
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1]; //Second object
+    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2]; //Third object
+    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3]; //Third object
     
-    TabBarItem1.title = @"Culture";
-    TabBarItem2.title = @"Map";
-    TabBarItem3.title = @"Change";
-    TabBarItem4.title = @"Note";
+    //title of tabbariterm
+    tabBarItem1.title = @"Culture";
+    tabBarItem2.title = @"Map";
+    tabBarItem3.title = @"Change";
+    tabBarItem4.title = @"Note";
+    
+    //set the size of image in tabbar
+    tabBarItem4.imageInsets = UIEdgeInsetsMake(0, -10, -6, -10);
+    tabBarItem3.imageInsets = UIEdgeInsetsMake(0, -10, -6, -10);
+    tabBarItem2.imageInsets = UIEdgeInsetsMake(0, -10, -6, -10);
+    tabBarItem1.imageInsets = UIEdgeInsetsMake(0, -10, -6, -10);
     
     
     return YES;

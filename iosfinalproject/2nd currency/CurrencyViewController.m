@@ -25,6 +25,8 @@
     _calculatebutton.hidden = true;
     _resetbutton.hidden = true;
     
+    //self.cost = self.datacurrency.unitCost;
+    
     
 }
 
@@ -85,6 +87,8 @@
     double allcost = [self cost];//allcost is the cost calculated before
     double allextracost = [self cost] - (self.allfundsnumber);//calculte the allextracost
     
+    _allallcost = [self cost];
+    
     
     self.remaininglabel.text = [NSString stringWithFormat:@"Remaining = £%0.2f ", allremaining];//output the remaininglabel
     self.costlabel.text = [NSString stringWithFormat:@"cost = £ %.2f  ", allcost];//output the costlabel
@@ -127,18 +131,22 @@
         _calculatebutton.hidden = false;
         _resetbutton.hidden = false;
         
+        NSLog(@"remaining <0 start");
+        
     }
     
     if (allremaining > 0){
         //output the label
         self.remaininglabel.text = [NSString stringWithFormat:@"Remaining = £%0.2f ", allremaining];
         self.costlabel.text = [NSString stringWithFormat:@"cost = £ %.2f  ", allcost];
+        
         //show the label hidden before, because there is no extracost, the extracostlabel hidden.
         self.extracostlabel.hidden = true;
         self.costlabel.hidden=false;
         self.remaininglabel.hidden = false;
         _calculatebutton.hidden = false;
         _resetbutton.hidden = false;
+        NSLog(@"remaining >0 start");
         
     }
     
@@ -162,51 +170,16 @@
     
     _calculatebutton.hidden = true;
     _resetbutton.hidden = true;
+    NSLog(@"resert success");
     
 }
 
-/*
-- (IBAction)backgroundPressed:(id)sender {
-    
-    NSLog(@"BackgroundPressed");
-    
-    if ([self.allfundsTextField isFirstResponder]) {
-        [self.allfundsTextField resignFirstResponder];
-    }
-    if ([self.fiftypoundsTextField isFirstResponder]) {
-        [self.fiftypoundsTextField resignFirstResponder];
-    }
-    if ([self.twentypoundsTextField isFirstResponder]) {
-        [self.twentypoundsTextField resignFirstResponder];
-    }
-    if ([self.tenpoundsTextField isFirstResponder]) {
-        [self.tenpoundsTextField resignFirstResponder];
-    }
-    if ([self.fivepoundsTextField isFirstResponder]) {
-        [self.fivepoundsTextField resignFirstResponder];
-    }
-    
-    if ([self.onepoundTextField isFirstResponder]) {
-        [self.onepoundTextField resignFirstResponder];
-    }
-    if ([self.fiftypennyTextField isFirstResponder]) {
-        [self.fiftypennyTextField resignFirstResponder];
-    }
-    if ([self.twentypennyTextField isFirstResponder]) {
-        [self.twentypennyTextField resignFirstResponder];
-    }
-    if ([self.tenpennyTextField isFirstResponder]) {
-        [self.tenpennyTextField resignFirstResponder];
-    }
-}
- */
- 
 
 
 
 
 
-- (IBAction)backgroundPressed:(id)sender {
+- (IBAction)backgroundPressed:(id)sender {//if user touch the screen, the input box will be hidden
     
     if ([self.allfundsTextField isFirstResponder]) {
         [self.allfundsTextField resignFirstResponder];//add some code to dismiss either Text field as the first responder
@@ -240,4 +213,16 @@
     NSLog(@"background success");
     
 }
+
+//learn from https://stackoverflow.com/questions/5210535/passing-data-between-view-controllers
+// passing the data by using the segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showDetailSegue"]){
+        CurrencychangeViewController *controller = (CurrencychangeViewController *)segue.destinationViewController;
+        controller.isSomethingEnabled = _allallcost;
+        
+    }
+}
+
+
 @end

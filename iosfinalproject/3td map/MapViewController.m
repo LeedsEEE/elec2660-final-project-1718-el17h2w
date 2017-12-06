@@ -94,7 +94,7 @@
     
 }
 
-// these code learn from https://www.youtube.com/watch?v=A-_m-zIzc2M
+// these code learn from https://www.youtube.com/watch?v=A-_m-zIzc2M //change the type of map
 - (IBAction)mapTypeSelected:(id)sender {//change the map type
     switch ([sender selectedSegmentIndex]){
             

@@ -38,7 +38,7 @@ NSArray *currencychangearray;
                             @"MYR - Malaysian Ringgit",
                             @"JPY - Japanese Yen",
                             
-                            ];
+                            ];// the unit array in pick view
     
 }
 
@@ -49,7 +49,7 @@ NSArray *currencychangearray;
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
-    return 1;
+    return 1;//only one component in pickview
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
@@ -83,15 +83,18 @@ numberOfRowsInComponent:(NSInteger)component {
     
     self.unit = [self.currencypickerview selectedRowInComponent:0];//The first column of the selector pickview // returns the choose to calculate.
     
+   
+    
     
    // myDataClass *data = [myDataClass sharedInstance];
-     double unitcost = [self.currency cost];
+    
     
     
     if (self.unit == 0) {// if user select the first line
-        
+        double unitcost = _isSomethingEnabled;
+        NSLog(@"_isSomethingEnabled= %f", _isSomethingEnabled);
         self.poundsunitlabel.text = [NSString stringWithFormat:@"%.2f",unitcost];//the cost before changed.
-        self.unittitlelabel.text = [NSString stringWithFormat:@"dollar"];
+        self.unittitlelabel.text = [NSString stringWithFormat:@"dollar"];//the unit after changing
         self.otherunitlabel.text = [NSString stringWithFormat:@""];//the cost after changed
         
     } else if (self.unit == 1) {// if user select the 2 line
