@@ -33,19 +33,19 @@
     
     //image taken from https://www.vcg.com/creative/1005217877
     TitleImage = [NSArray arrayWithObjects:
-                  @"UKintroduction.png",
-                  @"Architureal.png",
-                  @"currency.png",
-                  @"attraction.png",
-                  @"traffic.png",
-                  @"weather.png",
-                  @"tea.png",
-                  @"food.png",
-                  @"phonebooth.png",
-                  @"National costume.png",
-                  @"premier.png",
-                  @"Politics.png",
-                  @"boat.png",
+                  @"UKintroduction",
+                  @"Architureal",
+                  @"currency",
+                  @"attraction",
+                  @"traffic",
+                  @"weather",
+                  @"tea",
+                  @"food",
+                  @"phonebooth",
+                  @"National costume",
+                  @"premier",
+                  @"Politics",
+                  @"boat",
                   nil];//the image of yiylr image
     
     

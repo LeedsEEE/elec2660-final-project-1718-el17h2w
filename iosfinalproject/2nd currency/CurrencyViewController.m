@@ -215,7 +215,7 @@
 }
 
 //learn from https://stackoverflow.com/questions/5210535/passing-data-between-view-controllers
-// passing the data by using the segue
+// passing the data by using the segue//showDetailSegue is the name of segue
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"showDetailSegue"]){
         CurrencychangeViewController *controller = (CurrencychangeViewController *)segue.destinationViewController;

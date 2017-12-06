@@ -25,10 +25,6 @@
 		BA91FA9B1FC5FA640016DB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FA9A1FC5FA640016DB3F /* main.m */; };
 		BA91FAA51FC5FA640016DB3F /* iosfinalprojectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FAA41FC5FA640016DB3F /* iosfinalprojectTests.m */; };
 		BA91FAB01FC5FA640016DB3F /* iosfinalprojectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA91FAAF1FC5FA640016DB3F /* iosfinalprojectUITests.m */; };
-		BA9F75CA1FD86BFF002BF098 /* tabbar1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75C91FD86BFF002BF098 /* tabbar1.jpeg */; };
-		BA9F75CC1FD86C32002BF098 /* tabbar3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75CB1FD86C32002BF098 /* tabbar3.jpeg */; };
-		BA9F75CE1FD86C35002BF098 /* tabbar2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75CD1FD86C35002BF098 /* tabbar2.jpeg */; };
-		BA9F75D01FD86C3C002BF098 /* tabbar4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BA9F75CF1FD86C3C002BF098 /* tabbar4.jpeg */; };
 		BAA3BBBB1FCE50CB004330ED /* gif1.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3BBBA1FCE50CB004330ED /* gif1.png */; };
 		BAA3BBBD1FCE50D1004330ED /* gif0.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3BBBC1FCE50D1004330ED /* gif0.png */; };
 		BAA3BBBF1FCE50D8004330ED /* gif2.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3BBBE1FCE50D8004330ED /* gif2.png */; };
@@ -142,10 +138,6 @@
 		BA91FAAB1FC5FA640016DB3F /* iosfinalprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosfinalprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA91FAAF1FC5FA640016DB3F /* iosfinalprojectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosfinalprojectUITests.m; sourceTree = "<group>"; };
 		BA91FAB11FC5FA640016DB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA9F75C91FD86BFF002BF098 /* tabbar1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar1.jpeg; path = ../../../tabbar1.jpeg; sourceTree = "<group>"; };
-		BA9F75CB1FD86C32002BF098 /* tabbar3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar3.jpeg; path = ../../../tabbar3.jpeg; sourceTree = "<group>"; };
-		BA9F75CD1FD86C35002BF098 /* tabbar2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar2.jpeg; path = ../../../tabbar2.jpeg; sourceTree = "<group>"; };
-		BA9F75CF1FD86C3C002BF098 /* tabbar4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tabbar4.jpeg; path = ../../../tabbar4.jpeg; sourceTree = "<group>"; };
 		BAA3BBBA1FCE50CB004330ED /* gif1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif1.png; sourceTree = "<group>"; };
 		BAA3BBBC1FCE50D1004330ED /* gif0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif0.png; sourceTree = "<group>"; };
 		BAA3BBBE1FCE50D8004330ED /* gif2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif2.png; sourceTree = "<group>"; };
@@ -231,9 +223,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA04DFE01FD8955200A1AC90 /* unitchangeimage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = unitchangeimage;
+			sourceTree = "<group>";
+		};
 		BA0CE3A41FC7AE080070780B /* 2nd currency */ = {
 			isa = PBXGroup;
 			children = (
+				BA04DFE01FD8955200A1AC90 /* unitchangeimage */,
 				BA0CE3A61FC7AE080070780B /* CurrencyViewController.h */,
 				BA0CE3A81FC7AE080070780B /* CurrencyViewController.m */,
 				BA0CE3A71FC7AE080070780B /* CurrencychangeViewController.h */,
@@ -281,10 +281,6 @@
 		BA471E691FD77A340093B6BC /* tabbarimage */ = {
 			isa = PBXGroup;
 			children = (
-				BA9F75C91FD86BFF002BF098 /* tabbar1.jpeg */,
-				BA9F75CB1FD86C32002BF098 /* tabbar3.jpeg */,
-				BA9F75CD1FD86C35002BF098 /* tabbar2.jpeg */,
-				BA9F75CF1FD86C3C002BF098 /* tabbar4.jpeg */,
 			);
 			path = tabbarimage;
 			sourceTree = "<group>";
@@ -588,7 +584,6 @@
 				BADE13721FC7AA8700AFFACB /* tea.png in Resources */,
 				BADE13711FC7AA8700AFFACB /* UKintroduction.png in Resources */,
 				BADE13831FC7AB1E00AFFACB /* food.png in Resources */,
-				BA9F75D01FD86C3C002BF098 /* tabbar4.jpeg in Resources */,
 				BAA3BBC11FCE50E0004330ED /* gif3.png in Resources */,
 				BAAE58891FD4BF0C00A73133 /* National costume.png in Resources */,
 				BAA3BBC51FCE50E9004330ED /* gif5.png in Resources */,
@@ -598,7 +593,6 @@
 				BADE13671FC7AA8700AFFACB /* boat.png in Resources */,
 				BADE137C1FC7AA8700AFFACB /* teaimage.jpg in Resources */,
 				BAA3BBCD1FCE50FC004330ED /* gif9.png in Resources */,
-				BA9F75CA1FD86BFF002BF098 /* tabbar1.jpeg in Resources */,
 				BADE136C1FC7AA8700AFFACB /* premier.png in Resources */,
 				BAA3BBD71FCE5111004330ED /* gif14.png in Resources */,
 				BAAE588B1FD4BF3000A73133 /* National costumeimage.jpg in Resources */,
@@ -614,9 +608,7 @@
 				BADE13701FC7AA8700AFFACB /* currency.png in Resources */,
 				BADE13771FC7AA8700AFFACB /* phoneboothimage.jpg in Resources */,
 				BADE13781FC7AA8700AFFACB /* foodtruckimage.jpg in Resources */,
-				BA9F75CC1FD86C32002BF098 /* tabbar3.jpeg in Resources */,
 				BAAE58851FD4BC2000A73133 /* Politicsimage.jpg in Resources */,
-				BA9F75CE1FD86C35002BF098 /* tabbar2.jpeg in Resources */,
 				BADE13681FC7AA8700AFFACB /* gentleman.png in Resources */,
 				BADE13761FC7AA8700AFFACB /* boatimage.jpg in Resources */,
 				BAA3BBC31FCE50E6004330ED /* gif4.png in Resources */,
