@@ -193,17 +193,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA04DFE01FD8955200A1AC90 /* unitchangeimage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = unitchangeimage;
-			sourceTree = "<group>";
-		};
 		BA0CE3A41FC7AE080070780B /* 2nd currency */ = {
 			isa = PBXGroup;
 			children = (
-				BA04DFE01FD8955200A1AC90 /* unitchangeimage */,
 				BA0CE3A61FC7AE080070780B /* CurrencyViewController.h */,
 				BA0CE3A81FC7AE080070780B /* CurrencyViewController.m */,
 				BA0CE3A71FC7AE080070780B /* CurrencychangeViewController.h */,

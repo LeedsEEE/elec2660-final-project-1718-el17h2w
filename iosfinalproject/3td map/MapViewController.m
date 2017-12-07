@@ -65,6 +65,7 @@
 - (IBAction)directionButtonPressed:(id)sender {
     NSString *string = @"http://maps.apple.com?daddr";//location of lodon
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string]];
+    NSLog(@"turned to the apple map URL success");
 }
 
 - (IBAction)saveButtpnPressed:(id)sender {
@@ -109,6 +110,7 @@
         default:
             break;
     }
+    NSLog(@"change the type of map success");
 }
 
 @end

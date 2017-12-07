@@ -460,7 +460,7 @@
     
     long allchoice = [self allall];
     if (allchoice != 11){
-        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Something you may have forgotten" message: @"Press Skip to ignore it" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
+        UIAlertController *allertController = [UIAlertController alertControllerWithTitle:@"Something forgotten" message: @"Press Skip to ignore it" preferredStyle:UIAlertControllerStyleAlert]; //sets the alert message
         
         UIAlertAction *CanncelAction = [UIAlertAction
                                         actionWithTitle:@"Cancel"

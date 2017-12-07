@@ -36,16 +36,29 @@ NSArray *currencychangearray;
                             @"AED - United Arab Emirates dirham",//7
                             @"HKD - Hong Kong dollar",//8
                             @"MYR - Malaysian Ringgit",//9
-                            @"JPY - Japanese Yen",//10
+                            @"JPY - Japanese Yen"//10
                             
                             ];// the unit array in pick view
     //hidden the label before user use it
-    self.poundsunitlabel.hidden = true;
-    self.unittitlelabel.hidden=true;
-    self.otherunitlabel.hidden = true;
-    self.unitchangelabel.hidden = true;
-    self.changeflagimage.hidden = true;
-    self.ukflagimage.hidden = true;
+    //self.poundsunitlabel.hidden = true;
+    //self.unittitlelabel.hidden=true;
+    //self.otherunitlabel.hidden = true;
+    //self.unitchangelabel.hidden = true;
+    //self.changeflagimage.hidden = true;
+    //self.ukflagimage.hidden = true;
+    //NSLog(@"label hidden and picker view show");
+    
+    
+    // show the first unit. 
+    // unit cost equal to the passing data
+    double unitcost = _isSomethingEnabled;
+    
+    self.poundsunitlabel.text = [NSString stringWithFormat:@"%.2f (£)",unitcost];//the cost before changed.
+    self.unittitlelabel.text = [NSString stringWithFormat:@"Dollar"];//the unit after changing
+    self.otherunitlabel.text = [NSString stringWithFormat:@"%.2f($)",unitcost/0.74729];//the cost after changed
+    self.unitchangelabel.text = [NSString stringWithFormat:@"1 USD = 0.74729 GBP"];// exchange rate
+    self.currencychangeimage.image = [UIImage imageNamed:@"USD - GBP"];// show the trend chart image
+    self.changeflagimage.image = [UIImage imageNamed:@"USflag"];// show the change flag image
     
     
 }
@@ -94,9 +107,9 @@ numberOfRowsInComponent:(NSInteger)component {
    
     
     
-   // myDataClass *data = [myDataClass sharedInstance];
-    
+    // unit cost equal to the passing data
     double unitcost = _isSomethingEnabled;
+    
     //all the flag taken from http://en.wikipedia.org
     //all of trend chart taken from https://themoneyconverter.com
     if (self.unit == 0) {// if user select the first line
@@ -115,6 +128,7 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"USD caculated and show labels");
         
     } else if (self.unit == 1) {// if user select the 2 line
         
@@ -131,6 +145,7 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"EUR caculated and show labels");
         
     } else if (self.unit == 2) {// if user select the 3 line
         
@@ -147,6 +162,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"CHF caculated and show labels");
+        
         
     } else if (self.unit == 3) {// if user select the 4 line
         
@@ -163,6 +180,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"CNY caculated and show labels");
+        
         
     } else if (self.unit == 4) {// if user select the 5 line
         self.poundsunitlabel.text = [NSString stringWithFormat:@"%.2f (£)",unitcost];
@@ -178,6 +197,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"INR caculated and show labels");
+        
         
     } else if (self.unit == 5) {// if user select the 6 line
         
@@ -194,6 +215,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"AUD caculated and show labels");
+        
         
     } else if (self.unit == 6) {// if user select the 7 line
         
@@ -210,6 +233,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"CAD caculated and show labels");
+        
         
     } else if (self.unit == 7) {// if user select the 8 line
         
@@ -226,6 +251,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"AED caculated and show labels");
+        
         
     }else if (self.unit == 8) {// if user select the 9 line
         
@@ -242,6 +269,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"HKD caculated and show labels");
+        
         
     }else if (self.unit == 9) {// if user select the 10 line
         
@@ -258,6 +287,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"MYR caculated and show labels");
+        
         
     }else if (self.unit == 10) {// if user select the 11 line
         
@@ -274,6 +305,8 @@ numberOfRowsInComponent:(NSInteger)component {
         self.unitchangelabel.hidden = false;
         self.changeflagimage.hidden = false;
         self.ukflagimage.hidden = false;
+        NSLog(@"JPY caculated and show labels");
+        
         
     }
    

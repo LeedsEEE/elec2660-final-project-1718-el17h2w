@@ -292,7 +292,7 @@
     
     
     self.image.animationImages = images;            //Sets the images array to the animationImage
-    self.image.animationDuration = 7;            // the image changed in 0.1second
+    self.image.animationDuration = 7;            // the image changed in 7second
     
     [self.view addSubview:self.image];
     [self.image startAnimating];

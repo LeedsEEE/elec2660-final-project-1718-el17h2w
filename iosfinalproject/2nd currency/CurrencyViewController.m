@@ -24,7 +24,7 @@
     self.remaininglabel.hidden = true;
     _calculatebutton.hidden = true;
     _resetbutton.hidden = true;
-    
+    NSLog(@"every label hidden"); // chick hidden
     //self.cost = self.datacurrency.unitCost;
     
     
@@ -220,7 +220,7 @@
     if([segue.identifier isEqualToString:@"showDetailSegue"]){
         CurrencychangeViewController *controller = (CurrencychangeViewController *)segue.destinationViewController;
         controller.isSomethingEnabled = _allallcost;
-        
+        NSLog(@"the cost passing!");
     }
 }
 

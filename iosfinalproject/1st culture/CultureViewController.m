@@ -19,8 +19,8 @@
     // Do any additional setup after loading the view.
     
     
-    self.culturetitlelabel.text = self.module.culturetitle;//output the culturetitlelabel
-    self.cultureimagelabel.image = [UIImage imageNamed:self.module.cultureimage];//output the cultureimagelabel
+    self.culturetitlelabel.text = self.module.culturetitle;//output the culturetitlelabel of tabel view
+    self.cultureimagelabel.image = [UIImage imageNamed:self.module.cultureimage];//output the cultureimagelabel in tabel ciew
     self.descriptionlabel.text = self.module.culturedescription;//output the descriptionlabel
     
 }

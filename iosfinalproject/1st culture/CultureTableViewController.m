@@ -46,7 +46,7 @@
                   @"premier",
                   @"Politics",
                   @"boat",
-                  nil];//the image of yiylr image
+                  nil];//the image of title image
     
     
 }
