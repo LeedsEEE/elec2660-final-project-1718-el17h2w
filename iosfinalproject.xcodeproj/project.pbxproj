@@ -278,13 +278,6 @@
 			path = "4th notes";
 			sourceTree = "<group>";
 		};
-		BA471E691FD77A340093B6BC /* tabbarimage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tabbarimage;
-			sourceTree = "<group>";
-		};
 		BA91FA7F1FC5FA630016DB3F = {
 			isa = PBXGroup;
 			children = (
@@ -313,7 +306,6 @@
 				BA0CE3A41FC7AE080070780B /* 2nd currency */,
 				BA3164371FD5C9A300F1242E /* 3td map */,
 				BA368A761FC9FB2000E6AF6A /* 4th notes */,
-				BA471E691FD77A340093B6BC /* tabbarimage */,
 				BA91FA911FC5FA630016DB3F /* Main.storyboard */,
 				BA91FA8B1FC5FA630016DB3F /* AppDelegate.h */,
 				BA91FA8C1FC5FA630016DB3F /* AppDelegate.m */,

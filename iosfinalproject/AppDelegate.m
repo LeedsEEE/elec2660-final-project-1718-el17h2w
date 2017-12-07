@@ -14,7 +14,8 @@
 
 @implementation AppDelegate
 
-
+//the icon of app taken from https://www.behance.net/gallery/19074153/Daknong-Travel-Icons
+//the cover image taken from https://www.vcg.com/
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
